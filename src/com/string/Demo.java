@@ -18,4 +18,11 @@ public class Demo {
 		}
 		return output;
 	}
+	
+	public void performamnce(){
+		for(int i=0; i<1000000000; i++){
+			
+		}
+		System.out.println("**finish**");
+	}
 }

@@ -26,5 +26,11 @@ public class DemoTest {
 		int expected[] = new int[]{3,8};
 		assertArrayEquals(expected, demo.addOneToArray(new int[]{2,7}));
 	}
+	
+	@Test(timeout=3)
+	public void testPerformance(){
+		Demo demo = new Demo();
+		demo.performamnce();
+	}
 
 }
