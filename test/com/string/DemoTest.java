@@ -32,5 +32,11 @@ public class DemoTest {
 		Demo demo = new Demo();
 		demo.performamnce();
 	}
+	
+	@Test(expected=ArithmeticException.class)
+	public void testException(){
+		Demo demo = new Demo();
+		demo.exception(0);
+	}
 
 }

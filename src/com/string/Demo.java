@@ -25,4 +25,9 @@ public class Demo {
 		}
 		System.out.println("**finish**");
 	}
+	
+	public void exception(int number){
+		int result = 10/number;
+		System.out.println("Result :"+result);
+	}
 }
