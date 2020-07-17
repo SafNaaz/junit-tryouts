@@ -2,12 +2,25 @@ package com.string;
 
 import static org.junit.Assert.*;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 public class DemoTest {
 
+	@Before
+	public void before(){
+		System.out.println("before");
+	}
+	
+	@After
+	public void after(){
+		System.out.println("after");
+	}
+	
 	@Test
 	public void testCompareString() {
+		System.out.println("first");
 		Demo demo = new Demo();
 		assertTrue(demo.compareString("hello", "hello"));
 		assertFalse(demo.compareString("helo", "hello"));
@@ -16,6 +29,7 @@ public class DemoTest {
 	
 	@Test
 	public void testConcatString(){
+		System.out.println("second");
 		Demo demo = new Demo();
 		assertEquals("HelloWorld", demo.concatString("Hello", "World"));
 	}
